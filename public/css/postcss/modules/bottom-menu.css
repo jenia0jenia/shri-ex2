@@ -1,0 +1,49 @@
+$module: .bottom-menu;
+
+$(module) {
+
+	&__item {
+		display: inline-block;
+		margin-right: 10px;
+
+		&-link {
+			font-family: Arial;
+			font-size: 12px;
+			color: $brown-text;
+
+			&:hover {
+				color: $black;
+			}
+		}
+
+		&_active {
+			$(module)__item-link {
+				color: $black;
+			}
+		}
+
+		&-link {
+			color: $brown-link;
+			text-decoration: none;
+		}
+	}
+}
+
+
+@media only screen and (max-width: $media-desktop) {
+
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-tablet) {
+
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-mobile) {
+
+	$(module) {
+	}
+}

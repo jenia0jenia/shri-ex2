@@ -1,0 +1,64 @@
+$module: .main;
+
+$(module) {
+	padding: 0 40px;
+	display: flex;
+	flex-wrap: wrap;
+
+	&__window {
+		margin-right: 13px;
+	}
+
+	&__action {
+		position: relative;
+		margin-left: 13px;
+
+		&-wrapper {
+		}
+	}
+
+	&__half {
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: $media-desktop) {
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-laptop) {
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-tablet-big) {
+	$(module) {
+		padding: 0 20px;
+	}
+}
+
+@media only screen and (max-width: $media-tablet) {
+	$(module) {
+		&__half {
+			width: 100%;
+		}
+
+		&__window {
+			margin-right: 0;
+		}
+
+		&__action {
+			margin-left: 0;
+
+			&-wrapper {
+				height: auto;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $media-mobile) {
+	$(module) {
+	}
+}

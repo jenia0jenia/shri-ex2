@@ -1,0 +1,24 @@
+$module: .fish;
+
+$(module) {
+}
+
+@media only screen and (max-width: $media-desktop) {
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-laptop) {
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-tablet) {
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-mobile) {
+	$(module) {
+	}
+}

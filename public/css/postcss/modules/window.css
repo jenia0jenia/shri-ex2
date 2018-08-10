@@ -1,0 +1,142 @@
+$module: .window;
+
+$(module) {
+	display: flex;
+	justify-content: space-between;
+
+	height: 330px;
+	padding: 20px 20px 0 20px;
+	border-radius: 20px;
+
+	background-image: url($(bg)room.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+	&__name {
+		font-size: 27px;
+		margin-bottom: 6px;
+	}
+
+	&__ann {
+		font-size: 14px;
+		font-family: Arial;
+		margin-bottom: 25px;
+	}
+
+	&__temperature {
+		margin-right: 13px;
+
+		&-wrapper {
+			display: flex;
+		}
+
+		&-name {
+			font-family: Arial;
+			font-size: 14px;
+			color: $brown-text;
+		}
+
+		&-value {
+			font-size: 36px;
+		}
+
+		&-icon {
+			display: inline-block;
+			width: 26px;
+			height: 26px;
+			background-size: contain;
+			margin-left: 5px;
+
+			&_cloud_drizzle {
+				background-image: url($(icons)cloud-drizzle@2x.png);
+			}
+		}
+	}
+
+	&__info {
+		margin-bottom: 6px;
+		margin-right: 25px;
+		margin-left: 5px;
+	}
+
+	&__timing {
+
+		&-actions {
+			width: 100%;
+			flex: 1 0 auto;
+		}
+
+		&-button {
+			flex: 0 0 auto;
+		}
+	}
+}
+
+@media only screen and (max-width: $media-desktop) {
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-laptop) {
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-tablet-big) {
+	$(module) {
+		display: block;
+		height: auto;
+		padding: 20px;
+
+		&__name {
+			font-size: 18px;
+		}
+
+		&__ann {
+			font-size: 12px;
+		}
+
+		&__info {
+			margin-right: 0;
+		}
+
+		&__temperature {
+			margin-right: 13px;
+
+			&-wrapper {
+				display: flex;
+			}
+
+			&-name {
+				font-size: 12px;
+			}
+
+			&-value {
+				font-size: 24px;
+			}
+
+			&-icon {
+				width: 21px;
+				height: 21px;
+				vertical-align: middle;
+			}
+		}
+
+		&__timing {
+			&-button {
+				display: none;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $media-tablet) {
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-mobile) {
+	$(module) {
+	}
+}

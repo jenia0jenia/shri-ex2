@@ -1,0 +1,141 @@
+$module: .carousel;
+
+$(module) {
+}
+
+@media only screen and (max-width: $media-desktop) {
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-laptop) {
+	$(module) {
+	}
+}
+
+
+@media only screen and (min-width: $media-tablet-big) {
+	$(module) {
+		&_horiz {
+			$(module) {
+				&__list {
+					display: block;
+				    white-space: nowrap;
+			    }
+
+				&__wrapper {
+					margin-bottom: -10px;
+			        overflow-x: scroll;
+			        overflow-y: hidden;
+				}
+
+				&__content {
+					overflow: hidden;
+				}
+			}
+		}
+
+		&_vert {
+			overflow: hidden;
+
+			$(module) {
+				&__wrapper {
+				}
+
+				&__content {
+					height: 100%;
+					margin-right: -30px;
+					overflow-x: hidden;
+					overflow-y: scroll;
+				}
+			}
+		}
+
+		&_column {
+			width: 200px;
+	        height: 260px;
+    		margin-bottom: 10px;
+		}
+
+		&_block {
+			$(module) {
+				&__wrapper {
+					height: 330px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $media-tablet-big) and (min-width: $media-tablet) {
+	$(module) {
+		&_horiz,
+		&_vert {
+			$(module) {
+				&__list {
+					display: block;
+				    white-space: nowrap;
+			    }
+
+				&__wrapper {
+					margin-bottom: -10px;
+			        overflow-x: scroll;
+			        overflow-y: hidden;
+				}
+
+				&__content {
+					overflow: hidden;
+				}
+			}
+		}
+
+		&_block {
+			overflow: hidden;
+
+			$(module) {
+				&__wrapper {
+					height: 270px;
+				}
+
+				&__content {
+					height: 100%;
+					margin-right: -30px;
+					overflow-x: hidden;
+					overflow-y: scroll;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $media-tablet) {
+	$(module) {
+		&_horiz,
+		&_vert,
+		&_block {
+			$(module) {
+				&__list {
+					display: block;
+				    white-space: nowrap;
+			    }
+
+				&__wrapper {
+					margin-bottom: -10px;
+			        overflow-x: scroll;
+			        overflow-y: hidden;
+				}
+
+				&__content {
+					overflow: hidden;
+					margin-right: -20px;
+					margin-left: -20px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $media-mobile) {
+	$(module) {
+	}
+}

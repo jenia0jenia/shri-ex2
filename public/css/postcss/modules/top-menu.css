@@ -1,0 +1,43 @@
+$module: .top-menu;
+
+$(module) {
+	&__item {
+		display: inline-block;
+		font-size: 16px;
+		margin-right: 20px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&_active {
+			$(module)__item-link {
+				color: $black;
+			}
+		}
+
+		&-link {
+			color: $brown-link;
+			text-decoration: none;
+		}
+	}
+}
+
+
+@media only screen and (max-width: $media-desktop) {
+
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-tablet) {
+
+	$(module) {
+	}
+}
+
+@media only screen and (max-width: $media-mobile) {
+
+	$(module) {
+	}
+}

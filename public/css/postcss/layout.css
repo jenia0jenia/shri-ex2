@@ -1,0 +1,48 @@
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: ArialBold; 
+	box-sizing: border-box;
+	color: $black;
+}
+
+.container {
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+.flexbox {
+	display: flex;
+	flex-direction: column;
+
+	.flexbox__item {
+		flex: 1 0 auto;
+	}
+
+	.flexbox__last {
+		flex: 0 0 auto;
+	}
+}
+
+
+@media only screen and (max-width: $media-desktop) {
+}
+
+@media only screen and (max-width: $media-laptop) {
+}
+
+@media only screen and (max-width: $media-tablet) {
+}
+
+@media only screen and (max-width: $media-mobile) {
+}

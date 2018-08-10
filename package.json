@@ -1,0 +1,41 @@
+{
+  "name": "shri-2018-2-task-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV='development' gulp watch:all"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.0",
+    "cssnano": "^4.0.5",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "path": "^0.12.7",
+    "postcss-assets": "^5.0.0",
+    "postcss-color-function": "^4.0.1",
+    "postcss-discard-comments": "^4.0.0",
+    "postcss-easings": "^1.0.1",
+    "postcss-extend": "^1.0.5",
+    "postcss-flexibility": "^2.0.0",
+    "postcss-grid": "^2.0.0",
+    "postcss-hexrgba": "^1.0.1",
+    "postcss-import": "^12.0.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-object-fit-images": "^1.1.2",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-simple-vars": "^4.1.0",
+    "postcss-units": "^1.1.1",
+    "webpack": "^4.16.5",
+    "webpack-stream": "^5.1.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "owl.carousel": "^2.3.4"
+  }
+}

@@ -1,0 +1,276 @@
+$module: .action;
+
+$(module) {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0;
+
+    &_action {
+        $(module)__card {
+            height: 100px;
+
+            &-container {
+            }
+        }
+    }
+
+    &_timer {
+        flex-direction: column;
+
+        $(module)__card {
+        }
+    }
+
+    &_device {
+        $(module)__card {
+            &-container {
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+
+    &::-webkit-scrollbar { 
+        display: none;
+        height: 0;
+        width: 0;
+        background: 0 0;
+    }
+
+    &__title {
+        margin-right: 40px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 120px;
+
+        background-color: $brown-ground;
+        border-radius: 20px;
+        padding: 14px;
+        cursor: pointer;
+        white-space: initial;
+
+        &-container {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        &:hover {
+            background-color: #fff;
+            box-shadow: 0 2px 6px 0 rgba(#c5baba, 0.50);
+        }
+
+        &-icon {
+            flex: 1 0 auto;
+            margin-bottom: 3px;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            &_temperature {
+                &::after {
+                    background-image: url($(icons)icon_temperature@2x.png);
+                }
+            }
+
+            &_temperature_yellow {
+                &::after {
+                    background-image: url($(icons)icon_temperature_2@2x.png);
+                }
+            }
+
+            &_sun {
+                &::after {
+                    background-image: url($(icons)icon_sun@2x.png);
+                }
+            }
+
+            &_scheduled {
+                &::after {
+                    background-image: url($(icons)icon_scheduled@2x.png);
+                }
+            }
+
+            &_sun_yellow {
+                &::after {
+                    background-image: url($(icons)icon_sun_2@2x.png);
+                }
+            }
+        }
+
+        &-title {
+            flex: 0 0 auto;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        &-time {
+            flex: 0 0 auto;
+            font-family: Arial;
+            font-size: 12px;
+            color: $brown-text;
+        }
+    }
+
+    &__button {
+        background-color: $brown-ground;
+        border-radius: 20px 20px 0 0;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 19px;
+            height: 16px;
+            background-image: url($(icons)arrow@2x.png);
+            background-size: contain;
+            transform: rotate(90deg);
+        }
+
+        &:hover {
+            background-color: #fff;
+        }
+    }
+
+    &__nav {
+        &_action {
+            position: absolute;
+            right: 53px;
+            top: 22px;
+        }
+
+        &_device {
+            position: absolute;
+            right: 53px;
+            top: 29px;
+        }
+
+        &-button {
+            position: absolute;
+            top: 0;
+            padding: 18px;
+            opacity: .6;
+            cursor: pointer;
+
+            background-image: url($(icons)arrow_left@2x.png);
+            background-size: 9px 14px;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            &_enabled,
+            &:hover {
+                opacity: 1;
+            }
+
+            &_left {
+                left: 0;
+            }
+
+            &_right {
+                left: 30px;
+                transform: scale(-1, 1);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $media-desktop) {
+    $(module) {
+    }
+}
+
+@media only screen and (min-width: $media-laptop) {
+    $(module) {
+        &_action {
+            $(module)__card {
+                &-container {
+                    &:not(:nth-child(3n)) {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $media-laptop) and (min-width: $media-tablet) {
+    $(module) {
+        &_action {
+            $(module)__card {
+                &-container {
+                    &:not(:nth-child(2n)) {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $media-laptop) {
+    $(module) {
+    }
+}
+
+@media only screen and (max-width: $media-tablet-big) {
+    $(module) {
+        &_action {
+            $(module)__card {
+                &-container {
+                }
+            }
+        }
+        &__button {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: $media-tablet) {
+    $(module) {
+
+        &__title {
+            margin-right: 0;
+        }
+
+        &__nav {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: $media-tablet) {
+    $(module) {
+
+        &__card {
+            &-container {
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $media-mobile) {
+    $(module) {
+    }
+}

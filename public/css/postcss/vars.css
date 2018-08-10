@@ -1,0 +1,20 @@
+$i: /public/i/;
+$icons: $(i)icons/;
+$img: $(i)img/;
+$bg: $(i)bg/;
+
+$font-roboto: Roboto;
+
+$black: #333;
+
+$brown-link: #888;
+$brown-border: #F0F0F0;
+$brown-text: #858585;
+$brown-ground: #F7F7F7;
+$yellow: #FFD93E;
+
+$media-desktop: 1440px;
+$media-laptop: 1366px;
+$media-tablet-big: 1080px;
+$media-tablet: 960px;
+$media-mobile: 720px;

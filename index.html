@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--[if IE 9]>
+  <html class="ie9">
+<![endif]-->
+<html lang="ru" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<title>yandex dom</title>
+	<!-- <link rel="stylesheet" href="public/css/index.css"> -->
+	<link rel="stylesheet" href="public/css/c/c.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="body flexbox">
+	<div class="wrapper flexbox__item">
+		<div class="header__wrapper">
+			<div class="container">
+				<div class="header">
+					<div class="header__logo">
+						<img src="public/i/logo.svg" class="header__logo-img">
+					</div>
+					<ul class="header__menu top-menu list">
+						<li class="top-menu__item top-menu__item_active"><a href="#" class="top-menu__item-link link">Сводка</a></li>
+						<li class="top-menu__item"><a href="#" class="top-menu__item-link link">Устройства</a></li>
+						<li class="top-menu__item"><a href="#" class="top-menu__item-link link">Сценарии</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="main">
+				<div class="main__half">
+					<div class="main__window">
+						<div class="main__title title">Главное</div>
+						<div class="window">
+							<div class="window__info">
+								<div class="window__name">Привет, Геннадий!</div>
+								<div class="window__ann">Двери и окна закрыты, сигнализация включена.</div>
+								<div class="window__temperature-wrapper">
+									<div class="window__temperature window__temperature_inside">
+										<div class="window__temperature-name">Дома</div>
+										<div class="window__temperature-value">+23</div>
+									</div>
+									<div class="window__temperature window__temperature_outside">
+										<div class="window__temperature-name">За окном</div>
+										<div class="window__temperature-value">+19<span class="window__temperature-icon window__temperature-icon_cloud_drizzle"></span></div>
+									</div>
+								</div>
+							</div>
+							<div class="window__timing">
+								<div class="window__timing-actions carousel carousel_vert carousel_column">
+									<div class="carousel__content">
+										<div class="carousel__wrapper">
+											<ul class="carousel__list action action_timer list">
+												<li class="action__card-container">
+												    <div class="action__card">
+													    <div class="action__card-icon action__card-icon_temperature "></div>
+													    <div class="action__card-title">Philips Cooler</div>
+													    <div class="action__card-time">Начнет охлаждать в 16:30</div>
+													</div>
+												</li>
+												<li class="action__card-container">
+												    <div class="action__card">
+													    <div class="action__card-icon action__card-icon_sun"></div>
+													    <div class="action__card-title">Xiaomi Yeelight LED Smart Bulb</div>
+													    <div class="action__card-time">Включится в 17:00</div>
+													</div>
+												</li>
+												<li class="action__card-container">
+												    <div class="action__card">
+													    <div class="action__card-icon action__card-icon_sun"></div>
+													    <div class="action__card-title">Xiaomi Yeelight LED Smart Bulb</div>
+													    <div class="action__card-time">Включится в 17:00</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="window__timing-button action__button"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__half">
+					<div class="main__action">
+						<div class="main__title title action__title">Избранные сценарии</div>
+						<div class="main__action-wrapper carousel carousel_block">
+							<div class="carousel__content">
+								<div class="carousel__wrapper">
+									<ul class="carousel__list action action_action list">
+										<li class="action__card-container">
+											<div class="action__card">
+												<div class="action__card-icon action__card-icon_sun_yellow"></div>
+												<div class="action__card-title">Выключить весь свет в доме и во дворе</div>
+											</div>
+										</li>
+										<li class="action__card-container">
+											<div class="action__card">
+												<div class="action__card-icon action__card-icon_scheduled"></div>
+												<div class="action__card-title">Я ухожу</div>
+											</div>
+										</li>
+										<li class="action__card-container">
+											<div class="action__card">
+												<div class="action__card-icon action__card-icon_sun_yellow"></div>
+												<div class="action__card-title">Включить свет в коридоре</div>
+											</div>
+										</li>
+										<li class="action__card-container">
+											<div class="action__card">
+												<div class="action__card-icon action__card-icon_temperature_yellow"></div>
+												<div class="action__card-title">Набрать горячую ванну</div>
+												<div class="action__card-time">Начнётся в 18:00</div>
+											</div>
+										</li>
+										<li class="action__card-container">
+											<div class="action__card">
+												<div class="action__card-icon action__card-icon_temperature_yellow"></div>
+												<div class="action__card-title">Сделать пол тёплым во всей квартире</div>
+											</div>
+										</li>
+									</ul>
+									<div class="action__nav action__nav_action">
+										<span class="action__nav-button action__nav-button action__nav-button_left"></span>
+										<span class="action__nav-button action__nav-button action__nav-button_right"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="device">
+					<div class="device__selector-wrapper">
+						<div class="main__title device__title">Избранные устройства</div>
+						<ul class="device__selector list">
+							<li class="device__selector-item device__selector-item_active">Все</li>
+							<li class="device__selector-item">Кухня</li>
+							<li class="device__selector-item">Зал</li>
+							<li class="device__selector-item">Лампочки</li>
+							<li class="device__selector-item">Камеры</li>
+						</ul>
+					</div>
+					<div class="carousel carousel_horiz">
+						<div class="carousel__content">
+							<div class="carousel__wrapper">
+								<ul class="carousel__list device__list action action_device list">
+									<li class="action__card-container">
+										<div class="action__card">
+											<div class="action__card-icon action__card-icon_sun_yellow"></div>
+											<div class="action__card-title">Xiaomi Yeelight LED Smart Bulb</div>
+											<div class="action__card-time">Включено</div>
+										</div>
+									</li>
+									<li class="action__card-container">
+										<div class="action__card">
+											<div class="action__card-icon action__card-icon_sun"></div>
+											<div class="action__card-title">D-Link Omna 180 Cam</div>
+											<div class="action__card-time">Включится в 17:00</div>
+										</div>
+									</li>
+									<li class="action__card-container">
+										<div class="action__card">
+											<div class="action__card-icon action__card-icon_temperature"></div>
+											<div class="action__card-title">Elgato Eve Degree Connected</div>
+											<div class="action__card-time">Выключено до 17:00</div>
+										</div>
+									</li>
+									<li class="action__card-container">
+										<div class="action__card">
+											<div class="action__card-icon action__card-icon_sun"></div>
+											<div class="action__card-title">LIFX Mini Day & Dusk A60 E27</div>
+											<div class="action__card-time">Включится в 17:00</div>
+										</div>
+									</li>
+									<li class="action__card-container">
+										<div class="action__card">
+											<div class="action__card-icon action__card-icon_sun_yellow"></div>
+											<div class="action__card-title">Xiaomi Mi Air Purifier 2S</div>
+											<div class="action__card-time">Включено</div>
+										</div>
+									</li>
+									<li class="action__card-container">
+										<div class="action__card">
+											<div class="action__card-icon action__card-icon_sun"></div>
+											<div class="action__card-title">Philips Zhirui</div>
+											<div class="action__card-time">Выключено</div>
+										</div>
+									</li>
+									<li class="action__card-container">
+										<div class="action__card">
+											<div class="action__card-icon action__card-icon_sun_yellow"></div>
+											<div class="action__card-title">Xiaomi Mi Air Purifier 2S</div>
+											<div class="action__card-time">Включено</div>
+										</div>
+									</li>
+								</ul>
+								<div class="action__nav action__nav_action">
+									<span class="action__nav-button action__nav-button action__nav-button_left"></span>
+									<span class="action__nav-button action__nav-button action__nav-button_right"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer__wrapper flexbox__last">
+		<div class="container">
+			<div class="footer">
+				<ul class="footer__list list bottom-menu">
+					<li class="bottom-menu__item"><a href="#" class="bottom-menu__item-link">Помощь</a></li>
+					<li class="bottom-menu__item"><a href="#" class="bottom-menu__item-link">Обратная связь</a></li>
+					<li class="bottom-menu__item"><a href="#" class="bottom-menu__item-link">Разработчикам</a></li>
+					<li class="bottom-menu__item"><a href="#" class="bottom-menu__item-link">Условия использования</a></li>
+				</ul>
+				<div class="footer__copyright">© 2001–2017  ООО «Яндекс»</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="public/js/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="public/js/script.js"></script>
+</html>
