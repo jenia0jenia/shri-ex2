@@ -86,15 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./public/js/carousel.js":
+/*!*******************************!*\
+  !*** ./public/js/carousel.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return initCarousel; });\nfunction initCarousel(selector, option) {\n    let carousel = document.getElementsByClassName(selector),\n        defaultOption = {\n            move: 215,\n            direction: 'horiz',\n            disableClass: '_disabled'\n        },\n        move,\n        direction;\n\n    if (carousel.length <= 0) {\n        console.log('error scroll selector');\n        return false;\n    }\n\n    carousel = carousel[0];\n\n    if (typeof option.move !== 'undefined') {\n        move = option.move;\n    } else {\n        move = defaultOption.move;\n    }\n\n    if (typeof option.direction !== 'undefined') {\n        direction = option.direction;\n    } else {\n        direction = defaultOption.direction;\n    }\n\n    let prev = document.getElementsByClassName(option.prev)[0],\n        next = document.getElementsByClassName(option.next)[0];\n\n    if (typeof prev !== 'undefined') {\n        prev.classList.add(option.prev + '_disabled');\n        prev.addEventListener('click', scrollButtonPrev);\n    }\n\n    if (typeof next !== 'undefined') {\n        next.addEventListener('click', scrollButtonNext);\n    }\n\n    if (direction == 'vert') {\n        carousel.addEventListener('scroll', checkScrollTop);\n    } else {\n        carousel.addEventListener('scroll', checkScrollLeft);\n    }\n\n    function scrollButtonPrev(e) {\n        if (direction == 'vert') {\n            carousel.scrollTop -= move;\n        } else {\n            carousel.scrollLeft -= move;\n        }\n    }\n\n    function scrollButtonNext(e) {\n        if (direction == 'vert') {\n            carousel.scrollTop += move;\n            checkScrollTop(e.target);\n        } else {\n            carousel.scrollLeft += move;\n            checkScrollLeft(e.target);\n        }\n    }\n\n    function checkScrollTop(e) {\n        if (carousel.scrollTop == 0) {\n            prev.classList.add(option.prev + defaultOption.disableClass);\n        } else {\n            prev.classList.remove(option.prev + defaultOption.disableClass);\n        }\n\n        if (carousel.clientHeight + carousel.scrollTop >= carousel.scrollHeight) {\n            next.classList.add(option.next + defaultOption.disableClass);\n        } else {\n            next.classList.remove(option.next + defaultOption.disableClass);\n        }\n    }\n\n    function checkScrollLeft(e) {\n        if (carousel.scrollLeft == 0) {\n            prev.classList.add(option.prev + defaultOption.disableClass);\n        } else {\n            prev.classList.remove(option.prev + defaultOption.disableClass);\n        }\n\n        if (carousel.clientWidth + carousel.scrollLeft >= carousel.scrollWidth) {\n            next.classList.add(option.next + defaultOption.disableClass);\n        } else {\n            next.classList.remove(option.next + defaultOption.disableClass);\n        }\n    }\n}\n\n\n//# sourceURL=webpack:///./public/js/carousel.js?");
+
+/***/ }),
+
 /***/ "./public/js/index.js":
 /*!****************************!*\
   !*** ./public/js/index.js ***!
   \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("\n\n// import $ from \"jquery\";\n// import 'owl.carousel';\n// var $ = require(\"jquery\");\n// require('owl.carousel');\n\n$(document).ready(function(){\n    console.log('init');\n    // (function() {\n\n    //     $(\".timer\").owlCarousel({\n    //         center: true,\n    //         items: 2,\n    //         loop: false,\n    //         margin: 10,\n    //         dots: false,\n    //         responsive: {\n    //             600:{\n    //                 items: 1\n    //             }\n    //         }\n    //     });\n    // })();\n});\n\n//# sourceURL=webpack:///./public/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _carousel_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./carousel.js */ \"./public/js/carousel.js\");\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function() {\n    Object(_carousel_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('js-carousel-horiz', {\n    \tnext: 'js-carousel-right',\n    \tprev: 'js-carousel-left',\n    \tdirection: 'horis',\n    \tmove: 215,\n    });\n\n    Object(_carousel_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('js-carousel-vert', {\n    \tprev: 'js-carousel-up',\n    \tnext: 'js-carousel-down',\n    \tdirection: 'vert',\n    \tmove: 135,\n    });\n\n    Object(_carousel_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('js-carousel-block', {\n    \tprev: 'js-carousel-up_block',\n    \tnext: 'js-carousel-down_block',\n    \tdirection: 'vert',\n    \tmove: 115,\n    });\n});\n\n//# sourceURL=webpack:///./public/js/index.js?");
 
 /***/ })
 

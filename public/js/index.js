@@ -1,25 +1,26 @@
 'use strict';
 
-// import $ from "jquery";
-// import 'owl.carousel';
-// var $ = require("jquery");
-// require('owl.carousel');
+import carousel from "./carousel.js";
 
-$(document).ready(function(){
-    console.log('init');
-    // (function() {
+document.addEventListener('DOMContentLoaded', function() {
+    carousel('js-carousel-horiz', {
+    	next: 'js-carousel-right',
+    	prev: 'js-carousel-left',
+    	direction: 'horis',
+    	move: 215,
+    });
 
-    //     $(".timer").owlCarousel({
-    //         center: true,
-    //         items: 2,
-    //         loop: false,
-    //         margin: 10,
-    //         dots: false,
-    //         responsive: {
-    //             600:{
-    //                 items: 1
-    //             }
-    //         }
-    //     });
-    // })();
+    carousel('js-carousel-vert', {
+    	prev: 'js-carousel-up',
+    	next: 'js-carousel-down',
+    	direction: 'vert',
+    	move: 135,
+    });
+
+    carousel('js-carousel-block', {
+    	prev: 'js-carousel-up_block',
+    	next: 'js-carousel-down_block',
+    	direction: 'vert',
+    	move: 115,
+    });
 });

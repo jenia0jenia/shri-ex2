@@ -20,7 +20,7 @@
 						<img src="public/i/logo.svg" class="header__logo-img">
 					</div>
 					<ul class="header__menu top-menu list">
-						<li class="top-menu__item top-menu__item_active"><a href="#" class="top-menu__item-link link">Сводка</a></li>
+						<li class="top-menu__item top-menu__item_active"><a href="#" class="top-menu__item-link link">Сводка☰</a></li>
 						<li class="top-menu__item"><a href="#" class="top-menu__item-link link">Устройства</a></li>
 						<li class="top-menu__item"><a href="#" class="top-menu__item-link link">Сценарии</a></li>
 					</ul>
@@ -48,8 +48,9 @@
 								</div>
 							</div>
 							<div class="window__timing">
+								<div class="window__timing-button action__button action__button_prev js-carousel-up"></div>
 								<div class="window__timing-actions carousel carousel_vert carousel_column">
-									<div class="carousel__content">
+									<div class="carousel__content js-carousel-vert">
 										<div class="carousel__wrapper">
 											<ul class="carousel__list action action_timer list">
 												<li class="action__card-container">
@@ -77,7 +78,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="window__timing-button action__button"></div>
+								<div class="window__timing-button action__button action__button_next js-carousel-down"></div>
 							</div>
 						</div>
 					</div>
@@ -86,9 +87,34 @@
 					<div class="main__action">
 						<div class="main__title title action__title">Избранные сценарии</div>
 						<div class="main__action-wrapper carousel carousel_block">
-							<div class="carousel__content">
+							<div class="carousel__content js-carousel-block">
 								<div class="carousel__wrapper">
 									<ul class="carousel__list action action_action list">
+										<li class="action__card-container">
+											<div class="action__card">
+												<div class="action__card-icon action__card-icon_sun_yellow"></div>
+												<div class="action__card-title">Выключить весь свет в доме и во дворе</div>
+											</div>
+										</li>
+										<li class="action__card-container">
+											<div class="action__card">
+												<div class="action__card-icon action__card-icon_scheduled"></div>
+												<div class="action__card-title">Я ухожу</div>
+											</div>
+										</li>
+										<li class="action__card-container">
+											<div class="action__card">
+												<div class="action__card-icon action__card-icon_sun_yellow"></div>
+												<div class="action__card-title">Включить свет в коридоре</div>
+											</div>
+										</li>
+										<li class="action__card-container">
+											<div class="action__card">
+												<div class="action__card-icon action__card-icon_temperature_yellow"></div>
+												<div class="action__card-title">Набрать горячую ванну</div>
+												<div class="action__card-time">Начнётся в 18:00</div>
+											</div>
+										</li>
 										<li class="action__card-container">
 											<div class="action__card">
 												<div class="action__card-icon action__card-icon_sun_yellow"></div>
@@ -121,11 +147,11 @@
 											</div>
 										</li>
 									</ul>
-									<div class="action__nav action__nav_action">
-										<span class="action__nav-button action__nav-button action__nav-button_left"></span>
-										<span class="action__nav-button action__nav-button action__nav-button_right"></span>
-									</div>
 								</div>
+							</div>
+							<div class="action__nav action__nav_action">
+								<span class="action__nav-button action__nav-button action__nav-button_left js-carousel-up_block"></span>
+								<span class="action__nav-button action__nav-button action__nav-button_right js-carousel-down_block"></span>
 							</div>
 						</div>
 					</div>
@@ -143,7 +169,7 @@
 					</div>
 					<div class="carousel carousel_horiz">
 						<div class="carousel__content">
-							<div class="carousel__wrapper">
+							<div class="carousel__wrapper js-carousel-horiz">
 								<ul class="carousel__list device__list action action_device list">
 									<li class="action__card-container">
 										<div class="action__card">
@@ -195,11 +221,11 @@
 										</div>
 									</li>
 								</ul>
-								<div class="action__nav action__nav_action">
-									<span class="action__nav-button action__nav-button action__nav-button_left"></span>
-									<span class="action__nav-button action__nav-button action__nav-button_right"></span>
-								</div>
 							</div>
+						</div>
+						<div class="action__nav action__nav_device">
+							<span class="action__nav-button action__nav-button action__nav-button_left js-carousel-left"></span>
+							<span class="action__nav-button action__nav-button action__nav-button_right js-carousel-right"></span>
 						</div>
 					</div>
 				</div>
@@ -220,6 +246,5 @@
 		</div>
 	</div>
 </body>
-<script type="text/javascript" src="public/js/plugins/jquery.min.js"></script>
 <script type="text/javascript" src="public/js/script.js"></script>
 </html>

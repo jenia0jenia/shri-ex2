@@ -9,7 +9,7 @@ const JS_INDEX = path.join(JS_PATH, 'index.js');
 const JS_OUT_FILE = 'script.js';
 
 module.exports = {
-    // mode: 'development',
+    mode: 'development',
     entry: JS_INDEX,
     output: {
         path: JS_OUT_PATH,

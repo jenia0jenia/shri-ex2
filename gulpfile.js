@@ -213,7 +213,8 @@ function __html(done) {
 function __js(done) {
     return gulp.src(paths.webpackEntry)
         .pipe(webpack_stream(webpack_config, webpack))
-        .pipe(gulp.dest(paths.js_path));
+        .pipe(gulp.dest(paths.js_path))
+        .on('end', browserSync.reload);
 }
 
 // del dir
