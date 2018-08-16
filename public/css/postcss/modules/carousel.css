@@ -9,6 +9,7 @@ $(module) {
         background: 0 0;
     }
 
+	&_card,
     &_horiz {
 		$(module) {
 			&__wrapper {
@@ -21,6 +22,8 @@ $(module) {
 		$(module) {
 			&__content {
     			scroll-behavior: smooth;
+			    margin-top: -20px;
+    			padding-top: 20px;
 			}
 		}
     }
@@ -29,6 +32,15 @@ $(module) {
 		$(module) {
 			&__content {
     			scroll-behavior: smooth;
+			}
+		}
+    }
+
+    &_card {
+		$(module) {
+			&__content {
+    			scroll-behavior: smooth;
+				overflow: hidden;
 			}
 		}
     }
@@ -48,20 +60,11 @@ $(module) {
 	opacity: .3;
 }
 
-@media only screen and (max-width: $media-desktop) {
-	$(module) {
-	}
-}
-
-@media only screen and (max-width: $media-laptop) {
-	$(module) {
-	}
-}
-
-
 @media only screen and (min-width: $media-tablet-big) {
 	$(module) {
 		&_horiz {
+			margin-right: -20px;
+
 			$(module) {
 				&__list {
 					display: block;
@@ -97,10 +100,11 @@ $(module) {
 		}
 
 		&_column {
-            height: 260px;
-		    margin-bottom: 10px;
-		    margin-top: -10px;
+            height: 350px;
+		    margin-bottom: 0px;
+		    margin-top: -20px;
 		    width: 200px;
+		    padding-top: 20px;
 		}
 
 		&_block {
@@ -176,6 +180,7 @@ $(module) {
 
 @media only screen and (max-width: $media-tablet) {
 	$(module) {
+		&_card,
 		&_horiz,
 		&_vert,
 		&_block {
@@ -198,16 +203,44 @@ $(module) {
 		}
 
 		&_vert {
+			margin-left: -15px;
+			$(module) {
+				&__content {
+					margin-right: -30px;
+				}
+
+				&__wrapper {
+					padding-left: 15px;
+				}
+			}
+		}
+
+		&_block,
+		&_horiz {
 			$(module) {
 				&__content {
 					margin-right: -20px;
 				}
 			}
 		}
-	}
-}
 
-@media only screen and (max-width: $media-mobile) {
-	$(module) {
+		&_card {
+		   $(module) {
+				&__content {
+					margin-right: -20px;
+				}
+			}
+		}
+
+		&_card,
+		&_horiz,
+		&_block {
+		    margin-left: -20px;
+			$(module) {
+				&__wrapper {
+					padding-left: 20px;
+				}
+			}
+		}
 	}
 }

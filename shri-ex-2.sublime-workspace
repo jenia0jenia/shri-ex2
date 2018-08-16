@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"birr",
+				"border-image-repeat\tproperty"
+			],
+			[
+				"border",
+				"border-radius\tproperty"
+			],
+			[
+				"card",
+				"card__wrapper_opened"
+			],
+			[
+				"min",
+				"min-height\tproperty"
+			],
+			[
+				"a",
+				"abs"
+			],
+			[
+				"f",
+				"flex-start\tjustify-content"
+			],
+			[
+				"bgsc",
+				"bgsz-ct\tbackground-size: contain;"
+			],
+			[
+				"op",
+				"defaultOption"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
 				"sc",
 				"scrollLeft"
 			],
@@ -22,10 +58,6 @@
 			[
 				"max-",
 				"max-width\tproperty"
-			],
-			[
-				"add",
-				"addClass"
 			],
 			[
 				"e",
@@ -116,10 +148,6 @@
 				"inline-block\tdisplay"
 			],
 			[
-				"a",
-				"auto\theight"
-			],
-			[
 				"bore",
 				"border\tproperty"
 			],
@@ -170,10 +198,6 @@
 			[
 				"print",
 				"print_r"
-			],
-			[
-				"bgsc",
-				"bgsz-cv\tbackground-size: cover;"
 			],
 			[
 				"remove",
@@ -258,10 +282,6 @@
 			[
 				"padd",
 				"padding"
-			],
-			[
-				"border",
-				"border"
 			],
 			[
 				"bacgr",
@@ -464,10 +484,6 @@
 				"timezone"
 			],
 			[
-				"min",
-				"min-height"
-			],
-			[
 				"_SHOP",
 				"_SHOP_GROUPS_REL"
 			],
@@ -498,22 +514,6 @@
 			[
 				"type",
 				"type_id"
-			],
-			[
-				"__",
-				"__PRODUCTS__CACHE"
-			],
-			[
-				"els",
-				"elsif"
-			],
-			[
-				"PROD",
-				"PROD_PRODS_ADD"
-			],
-			[
-				"li",
-				"lists"
 			]
 		]
 	},
@@ -523,34 +523,35 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 11068,
+				"buffer_size": 16528,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "public/js/carousel.js",
+			"file": "public/i/bg/round_slider@1x.svg",
 			"settings":
 			{
-				"buffer_size": 2727,
+				"buffer_size": 1755,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/css/postcss/modules/carousel.css",
+			"file": "public/i/bg/round_slider_full@1x.svg",
 			"settings":
 			{
-				"buffer_size": 2898,
+				"buffer_size": 1749,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "style     = window.getComputedStyle(carousel),\n          overflowX = style.overflowX,\n          overflowY = style.overflowY,\n          ",
+			"file": "public/css/postcss/modules/round-slider.css",
 			"settings":
 			{
-				"buffer_size": 135,
+				"buffer_size": 1552,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -558,16 +559,16 @@
 			"file": "public/js/index.js",
 			"settings":
 			{
-				"buffer_size": 408,
+				"buffer_size": 1115,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "public/css/postcss/modules/action.css",
+			"file": "public/js/utils.js",
 			"settings":
 			{
-				"buffer_size": 6113,
+				"buffer_size": 4462,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -623,41 +624,54 @@
 		"/home/jenia/projects/answer/shri-ex2/public/css",
 		"/home/jenia/projects/answer/shri-ex2/public/css/postcss",
 		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/plugins",
 		"/home/jenia/projects/answer/shri-ex2/public/js",
 		"/home/jenia/projects/answer/shri-ex2/public/js/plugins"
 	],
 	"file_history":
 	[
+		"/home/jenia/projects/answer/shri-ex2/public/i/bg/round_slider@1x.svg",
+		"/home/jenia/projects/answer/shri-ex2/public/js/index.js",
+		"/home/jenia/projects/answer/shri-ex2/public/i/bg/round_slider_full@1x.svg",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/card.css",
+		"/home/jenia/projects/answer/shri-ex2/public/i/bg/round_slider_empty@1x.svg",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/index.css",
+		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/header.php",
+		"/home/jenia/servers/combat/home/bitrix/www/test/include/logo.php",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/range-slider.css",
+		"/home/jenia/projects/answer/shri-ex2/public/js/utils.js",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/action.css",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/window.css",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/carousel.css",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/header.css",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/range-timer.css",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/layout.css",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/vars.css",
+		"/home/jenia/projects/answer/shri-ex1/src/api.js",
+		"/home/jenia/projects/answer/shri-ex1/src/map.js",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/text.css",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/device.css",
+		"/home/jenia/projects/answer/shri-ex2/public/i/icons/arrow_down.svg",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/main.css",
+		"/home/jenia/projects/answer/shri-ex2/public/js/carousel.js",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/bottom-menu.css",
+		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/top-menu.css",
 		"/home/jenia/projects/answer/shri-ex2/public/i/icons/arrow_left_black.svg",
 		"/home/jenia/projects/answer/shri-ex2/public/i/icons/arrow_left.svg",
 		"/home/jenia/projects/shri/entrance-task-2-2/index.html",
 		"/home/jenia/projects/answer/shri-ex2/public/i/icons/arrow@1x.svg",
 		"/home/jenia/projects/answer/shri-ex2/public/i/icons/arrow_left@1x.svg",
-		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/carousel.css",
-		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/action.css",
-		"/home/jenia/projects/answer/shri-ex2/public/js/index.js",
-		"/home/jenia/projects/answer/shri-ex1/src/map.js",
 		"/home/jenia/projects/answer/shri-ex2/gulpfile.js",
 		"/home/jenia/projects/answer/shri-ex1/webpack.config.js",
 		"/home/jenia/projects/answer/shri-ex1/src/index.js",
 		"/home/jenia/projects/answer/shri-ex2/webpack.config.js",
-		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/window.css",
 		"/home/jenia/projects/answer/shri-ex2/package.json",
-		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/main.css",
-		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/header.css",
 		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/footer.css",
 		"/home/jenia/projects/answer/shri-ex2/README.md",
-		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/vars.css",
-		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/device.css",
-		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/index.css",
-		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/bottom-menu.css",
-		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/text.css",
-		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/top-menu.css",
 		"/home/jenia/projects/shri/entrance-task-2-2/guide/assets/Icons / Arrow Right / M Copy@2x.png",
 		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/timer.css",
 		"/home/jenia/projects/answer/shri-ex2/public/js/script.js",
 		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/fish.css",
-		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/layout.css",
 		"/home/jenia/projects/answer/shri-ex2/public/css/postcss/modules/fonts.css",
 		"/home/jenia/projects/answer/shri-ex2/public/css/index.css",
 		"/media/jenia/54C62908C628EBC4/projects/start_kit/public/css/postcss/style.css",
@@ -670,7 +684,6 @@
 		"/home/jenia/projects/answer/shri-ex1/package.json",
 		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/css/postcss/modules/compare.css",
 		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/components/bitrix/catalog.smart.filter/flex.filter/template.php",
-		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/header.php",
 		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/components/kuznica/banner/banner/template.php",
 		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/components/bitrix/news.list/main_banner/template.php",
 		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/css/postcss/modules/main-banner.css",
@@ -744,18 +757,7 @@
 		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/css/postcss/modules/dark-wrap.css",
 		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/components/bitrix/news.list/design/lang/ru/template.php",
 		"/home/jenia/servers/combat/home/bitrix/www/test/bitrix/components/bitrix/catalog.element/component.php",
-		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/components/bitrix/news/manufacturers/detail.php",
-		"/home/jenia/servers/combat/home/bitrix/www/test/catalog/index.php",
-		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/components/bitrix/news.list/sidebar_reviews/template.php",
-		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/components/bitrix/catalog.element/flex.fastview/template.php",
-		"/home/jenia/servers/combat/home/bitrix/www/test/about/o-nas/index.php",
-		"/home/jenia/servers/combat/home/bitrix/www/test/bitrix/components/bitrix/catalog.section/component.php",
-		"/home/jenia/servers/combat/home/bitrix/www/test/bitrix/templates/flex/components/bitrix/catalog.section/flex.section/result_modifier.php",
-		"/home/jenia/servers/combat/home/bitrix/www/test/bitrix/templates/flex/components/bitrix/news.detail/geo/result_modifier.php",
-		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/css/postcss/text.css",
-		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/components/kuznica/main.feedback/flex.question/template.php",
-		"/home/jenia/servers/combat/home/bitrix/www/test/ajax/question.php",
-		"/home/jenia/servers/combat/home/bitrix/www/test/ajax/feedback.php"
+		"/home/jenia/servers/combat/home/bitrix/www/bitrix/templates/flex/components/bitrix/news/manufacturers/detail.php"
 	],
 	"find":
 	{
@@ -774,6 +776,51 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"negative",
+			"23",
+			"26",
+			"50",
+			"rabge",
+			"angle",
+			"50",
+			"#",
+			"pageY",
+			"pageX",
+			"round",
+			"roun",
+			"timer",
+			"js-card-timer",
+			"card__range",
+			"_temp",
+			"js-card-slider",
+			"console.",
+			"class=\"action__card-container\"",
+			"-40",
+			"blu",
+			"blut",
+			"classList",
+			"wrapper",
+			"initCardSlider",
+			"horiz",
+			"carou",
+			".range[type=range]",
+			"input",
+			"text",
+			"border-radius",
+			"butto",
+			"'header__menu_open'",
+			"burgetTarget",
+			"F2F1F0",
+			"selec",
+			"carouse",
+			"-20px",
+			"main__title",
+			"getElementsByClassName",
+			"device__selector",
+			"seleco",
+			"disableClass",
+			"hover",
+			"button",
 			"e.target",
 			"js-carousel-down",
 			"defaultOption",
@@ -846,6 +893,26 @@
 		"regex": false,
 		"replace_history":
 		[
+			"positive",
+			"20",
+			"23",
+			"18",
+			"26",
+			"value",
+			"range",
+			"rabge",
+			"24",
+			"js-card-round",
+			"js-card-slider2",
+			"class=\"action__card-container js-card-timer\"",
+			"class=\"action__card-container js-card-slider\"",
+			"&",
+			".range",
+			"class",
+			"target",
+			"disableClassPostfix",
+			"prev",
+			"next",
 			"button",
 			"carousel",
 			"l",
@@ -876,7 +943,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -885,15 +952,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11068,
+						"buffer_size": 16528,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3617,
-								3617
+								16038,
+								16038
 							]
 						],
 						"settings":
@@ -902,7 +969,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 500.0,
+						"translation.y": 5530.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -910,48 +977,79 @@
 				},
 				{
 					"buffer": 1,
-					"file": "public/js/carousel.js",
+					"file": "public/i/bg/round_slider@1x.svg",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2727,
+						"buffer_size": 1755,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2366,
-								2366
+								983,
+								983
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 790.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/i/bg/round_slider_full@1x.svg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								852,
+								853
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "public/css/postcss/modules/carousel.css",
+					"buffer": 3,
+					"file": "public/css/postcss/modules/round-slider.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2898,
+						"buffer_size": 1552,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								460,
-								460
+								446,
+								446
 							]
 						],
 						"settings":
@@ -960,31 +1058,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
+					"file": "public/js/index.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 135,
+						"buffer_size": 1115,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								135,
-								135
+								1097,
+								1097
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -994,61 +1095,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "public/js/index.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 408,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								354,
-								354
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
 					"buffer": 5,
-					"file": "public/css/postcss/modules/action.css",
+					"file": "public/js/utils.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6113,
+						"buffer_size": 4462,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3909,
-								3909
+								4168,
+								4168
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2435.0,
+						"translation.y": 1151.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]

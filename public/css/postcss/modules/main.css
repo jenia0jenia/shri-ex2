@@ -22,16 +22,6 @@ $(module) {
 	}
 }
 
-@media only screen and (max-width: $media-desktop) {
-	$(module) {
-	}
-}
-
-@media only screen and (max-width: $media-laptop) {
-	$(module) {
-	}
-}
-
 @media only screen and (max-width: $media-tablet-big) {
 	$(module) {
 		padding: 0 20px;
@@ -60,5 +50,8 @@ $(module) {
 
 @media only screen and (max-width: $media-mobile) {
 	$(module) {
+		&__title {
+			display: none;
+		}
 	}
 }

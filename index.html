@@ -19,8 +19,9 @@
 					<div class="header__logo">
 						<img src="public/i/logo.svg" class="header__logo-img">
 					</div>
+					<div class="header__burger js-burger">☰</div>
 					<ul class="header__menu top-menu list">
-						<li class="top-menu__item top-menu__item_active"><a href="#" class="top-menu__item-link link">Сводка☰</a></li>
+						<li class="top-menu__item top-menu__item_active"><a href="#" class="top-menu__item-link link">Сводка</a></li>
 						<li class="top-menu__item"><a href="#" class="top-menu__item-link link">Устройства</a></li>
 						<li class="top-menu__item"><a href="#" class="top-menu__item-link link">Сценарии</a></li>
 					</ul>
@@ -48,26 +49,25 @@
 								</div>
 							</div>
 							<div class="window__timing">
-								<div class="window__timing-button action__button action__button_prev js-carousel-up"></div>
 								<div class="window__timing-actions carousel carousel_vert carousel_column">
-									<div class="carousel__content js-carousel-vert">
+									<div class="carousel__content js-vert">
 										<div class="carousel__wrapper">
 											<ul class="carousel__list action action_timer list">
-												<li class="action__card-container">
+												<li class="action__card-container js-card-slider">
 												    <div class="action__card">
 													    <div class="action__card-icon action__card-icon_temperature "></div>
 													    <div class="action__card-title">Philips Cooler</div>
 													    <div class="action__card-time">Начнет охлаждать в 16:30</div>
 													</div>
 												</li>
-												<li class="action__card-container">
+												<li class="action__card-container js-card-round">
 												    <div class="action__card">
 													    <div class="action__card-icon action__card-icon_sun"></div>
 													    <div class="action__card-title">Xiaomi Yeelight LED Smart Bulb</div>
 													    <div class="action__card-time">Включится в 17:00</div>
 													</div>
 												</li>
-												<li class="action__card-container">
+												<li class="action__card-container js-card-slider2">
 												    <div class="action__card">
 													    <div class="action__card-icon action__card-icon_sun"></div>
 													    <div class="action__card-title">Xiaomi Yeelight LED Smart Bulb</div>
@@ -78,69 +78,87 @@
 										</div>
 									</div>
 								</div>
-								<div class="window__timing-button action__button action__button_next js-carousel-down"></div>
+								<div class="window__timing-button action__button action__button_next js-vert-button"></div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="main__half">
 					<div class="main__action">
-						<div class="main__title title action__title">Избранные сценарии</div>
+						<div class="title action__title">Избранные сценарии</div>
 						<div class="main__action-wrapper carousel carousel_block">
 							<div class="carousel__content js-carousel-block">
 								<div class="carousel__wrapper">
 									<ul class="carousel__list action action_action list">
-										<li class="action__card-container">
+										<li class="action__card-container js-card-round">
 											<div class="action__card">
 												<div class="action__card-icon action__card-icon_sun_yellow"></div>
 												<div class="action__card-title">Выключить весь свет в доме и во дворе</div>
 											</div>
 										</li>
-										<li class="action__card-container">
+										<li class="action__card-container js-card-slider">
 											<div class="action__card">
 												<div class="action__card-icon action__card-icon_scheduled"></div>
 												<div class="action__card-title">Я ухожу</div>
 											</div>
 										</li>
-										<li class="action__card-container">
+										<li class="action__card-container js-card-round">
 											<div class="action__card">
 												<div class="action__card-icon action__card-icon_sun_yellow"></div>
 												<div class="action__card-title">Включить свет в коридоре</div>
 											</div>
 										</li>
-										<li class="action__card-container">
+										<li class="action__card-container js-card-slider2">
+											<div class="action__card">
+												<div class="action__card-icon action__card-icon_sun_yellow"></div>
+												<div class="action__card-title">Выключить весь свет в доме и во дворе</div>
+											</div>
+										</li>
+										<li class="action__card-container js-card-round">
+											<div class="action__card">
+												<div class="action__card-icon action__card-icon_scheduled"></div>
+												<div class="action__card-title">Я ухожу</div>
+											</div>
+										</li>
+										<li class="action__card-container js-card-slider">
+											<div class="action__card">
+												<div class="action__card-icon action__card-icon_sun_yellow"></div>
+												<div class="action__card-title">Включить свет в коридоре</div>
+											</div>
+										</li>
+										<li class="action__card-container js-card-round">
 											<div class="action__card">
 												<div class="action__card-icon action__card-icon_temperature_yellow"></div>
 												<div class="action__card-title">Набрать горячую ванну</div>
 												<div class="action__card-time">Начнётся в 18:00</div>
 											</div>
 										</li>
-										<li class="action__card-container">
+										<li class="action__card-container js-card-slider2">
 											<div class="action__card">
 												<div class="action__card-icon action__card-icon_sun_yellow"></div>
 												<div class="action__card-title">Выключить весь свет в доме и во дворе</div>
 											</div>
 										</li>
-										<li class="action__card-container">
+										<li class="action__card-container js-card-round">
 											<div class="action__card">
 												<div class="action__card-icon action__card-icon_scheduled"></div>
 												<div class="action__card-title">Я ухожу</div>
 											</div>
 										</li>
-										<li class="action__card-container">
+										<li class="action__card-container js-card-slider">
 											<div class="action__card">
 												<div class="action__card-icon action__card-icon_sun_yellow"></div>
 												<div class="action__card-title">Включить свет в коридоре</div>
 											</div>
 										</li>
-										<li class="action__card-container">
+										<li class="action__card-container js-card-round">
 											<div class="action__card">
 												<div class="action__card-icon action__card-icon_temperature_yellow"></div>
 												<div class="action__card-title">Набрать горячую ванну</div>
 												<div class="action__card-time">Начнётся в 18:00</div>
 											</div>
 										</li>
-										<li class="action__card-container">
+										<li class="action__card-container js-card-slider2">
 											<div class="action__card">
 												<div class="action__card-icon action__card-icon_temperature_yellow"></div>
 												<div class="action__card-title">Сделать пол тёплым во всей квартире</div>
@@ -158,7 +176,8 @@
 				</div>
 				<div class="device">
 					<div class="device__selector-wrapper">
-						<div class="main__title device__title">Избранные устройства</div>
+						<div class="device__title">Избранные устройства</div>
+						<div class="device__selector-button device__selector-item device__selector-item_active js-selector-button">Все</div>
 						<ul class="device__selector list">
 							<li class="device__selector-item device__selector-item_active">Все</li>
 							<li class="device__selector-item">Кухня</li>
@@ -171,49 +190,49 @@
 						<div class="carousel__content">
 							<div class="carousel__wrapper js-carousel-horiz">
 								<ul class="carousel__list device__list action action_device list">
-									<li class="action__card-container">
+									<li class="action__card-container js-card-round">
 										<div class="action__card">
 											<div class="action__card-icon action__card-icon_sun_yellow"></div>
 											<div class="action__card-title">Xiaomi Yeelight LED Smart Bulb</div>
 											<div class="action__card-time">Включено</div>
 										</div>
 									</li>
-									<li class="action__card-container">
+									<li class="action__card-container js-card-slider">
 										<div class="action__card">
 											<div class="action__card-icon action__card-icon_sun"></div>
 											<div class="action__card-title">D-Link Omna 180 Cam</div>
 											<div class="action__card-time">Включится в 17:00</div>
 										</div>
 									</li>
-									<li class="action__card-container">
+									<li class="action__card-container js-card-round">
 										<div class="action__card">
 											<div class="action__card-icon action__card-icon_temperature"></div>
 											<div class="action__card-title">Elgato Eve Degree Connected</div>
 											<div class="action__card-time">Выключено до 17:00</div>
 										</div>
 									</li>
-									<li class="action__card-container">
+									<li class="action__card-container js-card-slider2">
 										<div class="action__card">
 											<div class="action__card-icon action__card-icon_sun"></div>
 											<div class="action__card-title">LIFX Mini Day & Dusk A60 E27</div>
 											<div class="action__card-time">Включится в 17:00</div>
 										</div>
 									</li>
-									<li class="action__card-container">
+									<li class="action__card-container js-card-round">
 										<div class="action__card">
 											<div class="action__card-icon action__card-icon_sun_yellow"></div>
 											<div class="action__card-title">Xiaomi Mi Air Purifier 2S</div>
 											<div class="action__card-time">Включено</div>
 										</div>
 									</li>
-									<li class="action__card-container">
+									<li class="action__card-container js-card-slider">
 										<div class="action__card">
 											<div class="action__card-icon action__card-icon_sun"></div>
 											<div class="action__card-title">Philips Zhirui</div>
 											<div class="action__card-time">Выключено</div>
 										</div>
 									</li>
-									<li class="action__card-container">
+									<li class="action__card-container js-card-round">
 										<div class="action__card">
 											<div class="action__card-icon action__card-icon_sun_yellow"></div>
 											<div class="action__card-title">Xiaomi Mi Air Purifier 2S</div>
@@ -245,6 +264,120 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- CARD WITH SLIDER -->
+	<div class="card__wrapper js-slider-wrap">
+		<div class="card">
+			<div class="card__content">
+				<div class="card__top">
+					<div class="card__name">Elgato Eve Degree Connected</div>
+					<div class="card__weather">
+						<div class="card__weather-value">+23</div>
+						<div class="card__weather-icon card__weather-icon_temperature"></div>
+					</div>
+				</div>
+				<div class="card__status">Включено</div>
+				<div class="carousel carousel_card">
+					<div class="carousel__content">
+						<div class="carousel__wrapper">
+							<div class="carousel__list">
+								<ul class="card__selector list">
+									<li class="card__selector-item card__selector-item_active">Вручную</li>
+									<li class="card__selector-item">Холодно</li>
+									<li class="card__selector-item">Тепло</li>
+									<li class="card__selector-item">Жарко</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card__range-wrapper">
+					<input class="card__range range-slider" type="range">
+					<div class="card__range-extrem card__range-extrem_min">–10</div>
+					<div class="card__range-extrem card__range-extrem_max">+30</div>
+				</div>
+			</div>
+			<div class="card__button-wrapper">
+				<div class="card__button card__button_accept js-card-close">Применить</div>
+				<div class="card__button card__button_close js-card-close">Закрыть</div>
+			</div>
+		</div>
+		<div class="card__wrapper-bg js-card-close"></div>
+	</div>
+	<!-- // CARD WITH SLIDER -->
+
+	<!-- CARD WITH SLIDER2 -->
+	<div class="card__wrapper js-slider2-wrap">
+		<div class="card">
+			<div class="card__content">
+				<div class="card__top">
+					<div class="card__name">Xiaomi Yeelight LED Smart Bulb</div>
+					<div class="card__weather">
+						<div class="card__weather-icon card__weather-icon_sun"></div>
+					</div>
+				</div>
+				<div class="card__status">Включится в 17:00</div>
+				<div class="carousel carousel_card">
+					<div class="carousel__content">
+						<div class="carousel__wrapper">
+							<div class="carousel__list">
+								<ul class="card__selector list">
+									<li class="card__selector-item card__selector-item_active">Вручную</li>
+									<li class="card__selector-item">Дневной свет</li>
+									<li class="card__selector-item">Вечерний свет</li>
+									<li class="card__selector-item">Рассвет</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card__range-wrapper">
+					<input class="card__range range-slider range-slider_sun" type="range">
+					<div class="card__range-extrem card__range-extrem_min card__range-extrem_sun_min"></div>
+					<div class="card__range-extrem card__range-extrem_max card__range-extrem_sun_max"></div>
+				</div>
+			</div>
+			<div class="card__button-wrapper">
+				<div class="card__button card__button_accept js-card-close">Применить</div>
+				<div class="card__button card__button_close js-card-close">Закрыть</div>
+			</div>
+		</div>
+		<div class="card__wrapper-bg js-card-close"></div>
+	</div>
+	<!-- // CARD WITH SLIDER2 -->
+
+	<!-- CARD WITH ROUND -->
+	<div class="card__wrapper js-round-wrap">
+		<div class="card">
+			<div class="card__content">
+				<div class="card__top">
+					<div class="card__name">Elgato Eve Degree Connected</div>
+					<div class="card__weather">
+						<div class="card__weather-value">+23</div>
+						<div class="card__weather-icon card__weather-icon_temperature"></div>
+					</div>
+				</div>
+				<div class="card__status">Включено</div>
+				<div class="card__range-wrapper card__range-wrapper_round">
+					<input type="range" min="8" max="92" class="card__round js-range-round">
+					<div class="round-slider">
+						<div class="round-slider__value">+23</div>
+						<div class="round-slider__mark js-range-marker"></div>
+						<div class="round-slider__oval"></div>
+						<div class="round-slider__negative"></div>
+						<div class="round-slider__positive js-positive"></div>
+					</div>
+				</div>
+			</div>
+			<div class="card__button-wrapper">
+				<div class="card__button card__button_accept js-card-close">Применить</div>
+				<div class="card__button card__button_close js-card-close">Закрыть</div>
+			</div>
+		</div>
+		<div class="card__wrapper-bg js-card-close"></div>
+	</div>
+	<!-- // CARD WITH ROUND -->
+
 </body>
 <script type="text/javascript" src="public/js/script.js"></script>
 </html>

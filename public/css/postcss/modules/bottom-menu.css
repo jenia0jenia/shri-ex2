@@ -4,7 +4,7 @@ $(module) {
 
 	&__item {
 		display: inline-block;
-		margin-right: 10px;
+		margin-right: 13px;
 
 		&-link {
 			font-family: Arial;
@@ -26,24 +26,5 @@ $(module) {
 			color: $brown-link;
 			text-decoration: none;
 		}
-	}
-}
-
-
-@media only screen and (max-width: $media-desktop) {
-
-	$(module) {
-	}
-}
-
-@media only screen and (max-width: $media-tablet) {
-
-	$(module) {
-	}
-}
-
-@media only screen and (max-width: $media-mobile) {
-
-	$(module) {
 	}
 }

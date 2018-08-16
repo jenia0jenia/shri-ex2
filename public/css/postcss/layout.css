@@ -34,6 +34,16 @@ body {
 	}
 }
 
+._overflow {
+	position: relative;
+	overflow: hidden;
+}
+
+._blur {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
 
 @media only screen and (max-width: $media-desktop) {
 }

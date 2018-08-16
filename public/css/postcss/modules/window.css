@@ -4,7 +4,7 @@ $(module) {
 	display: flex;
 	justify-content: space-between;
 
-	height: 360px;
+	height: 330px;
 	padding: 20px 20px 0 20px;
 	border-radius: 20px;
 
@@ -15,6 +15,7 @@ $(module) {
 
 	&__name {
 		font-size: 27px;
+		margin-top: 5px;
 		margin-bottom: 6px;
 	}
 
@@ -25,7 +26,7 @@ $(module) {
 	}
 
 	&__temperature {
-		margin-right: 13px;
+		margin-right: 20px;
 
 		&-wrapper {
 			display: flex;
@@ -35,6 +36,7 @@ $(module) {
 			font-family: Arial;
 			font-size: 14px;
 			color: $brown-text;
+			margin-bottom: 5px;
 		}
 
 		&-value {
@@ -61,6 +63,7 @@ $(module) {
 	}
 
 	&__timing {
+		position: relative;
 
 		&-actions {
 			width: 100%;
@@ -70,16 +73,6 @@ $(module) {
 		&-button {
 			flex: 0 0 auto;
 		}
-	}
-}
-
-@media only screen and (max-width: $media-desktop) {
-	$(module) {
-	}
-}
-
-@media only screen and (max-width: $media-laptop) {
-	$(module) {
 	}
 }
 
@@ -131,12 +124,28 @@ $(module) {
 	}
 }
 
-@media only screen and (max-width: $media-tablet) {
-	$(module) {
-	}
-}
 
 @media only screen and (max-width: $media-mobile) {
 	$(module) {
+	    padding: 20px 15px;
+
+	    &__ann {
+	    	margin-bottom: 15px;
+	    }
+
+	    &__temperature {
+	    	margin-right: 20px;
+	    }
+
+	    &__timing {
+	    	margin-bottom: 0;
+			&-actions {
+				margin-left: 5px;
+			}
+		}
+
+		&__info {
+			margin-bottom: 20px;
+		}
 	}
 }

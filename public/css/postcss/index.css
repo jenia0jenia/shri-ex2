@@ -11,5 +11,8 @@
 @import "modules/main.css";
 @import "modules/window.css";
 @import "modules/action.css";
+@import "modules/card.css";
 @import "modules/device.css";
 @import "modules/carousel.css";
+@import "modules/range-slider.css";
+@import "modules/round-slider.css";

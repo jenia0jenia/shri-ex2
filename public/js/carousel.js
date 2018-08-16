@@ -3,7 +3,7 @@ export default function initCarousel(selector, option) {
         defaultOption = {
             move: 215,
             direction: 'horiz',
-            disableClass: '_disabled'
+            disableClassPostfix: '_disabled'
         },
         move,
         direction;
@@ -31,7 +31,6 @@ export default function initCarousel(selector, option) {
         next = document.getElementsByClassName(option.next)[0];
 
     if (typeof prev !== 'undefined') {
-        prev.classList.add(option.prev + '_disabled');
         prev.addEventListener('click', scrollButtonPrev);
     }
 
@@ -39,10 +38,13 @@ export default function initCarousel(selector, option) {
         next.addEventListener('click', scrollButtonNext);
     }
 
+
     if (direction == 'vert') {
         carousel.addEventListener('scroll', checkScrollTop);
+        checkScrollTop();
     } else {
         carousel.addEventListener('scroll', checkScrollLeft);
+        checkScrollLeft();
     }
 
     function scrollButtonPrev(e) {
@@ -56,38 +58,36 @@ export default function initCarousel(selector, option) {
     function scrollButtonNext(e) {
         if (direction == 'vert') {
             carousel.scrollTop += move;
-            checkScrollTop(e.target);
         } else {
             carousel.scrollLeft += move;
-            checkScrollLeft(e.target);
         }
     }
 
     function checkScrollTop(e) {
         if (carousel.scrollTop == 0) {
-            prev.classList.add(option.prev + defaultOption.disableClass);
+            prev.classList.add(option.prev + defaultOption.disableClassPostfix);
         } else {
-            prev.classList.remove(option.prev + defaultOption.disableClass);
+            prev.classList.remove(option.prev + defaultOption.disableClassPostfix);
         }
 
         if (carousel.clientHeight + carousel.scrollTop >= carousel.scrollHeight) {
-            next.classList.add(option.next + defaultOption.disableClass);
+            next.classList.add(option.next + defaultOption.disableClassPostfix);
         } else {
-            next.classList.remove(option.next + defaultOption.disableClass);
+            next.classList.remove(option.next + defaultOption.disableClassPostfix);
         }
     }
 
     function checkScrollLeft(e) {
         if (carousel.scrollLeft == 0) {
-            prev.classList.add(option.prev + defaultOption.disableClass);
+            prev.classList.add(option.prev + defaultOption.disableClassPostfix);
         } else {
-            prev.classList.remove(option.prev + defaultOption.disableClass);
+            prev.classList.remove(option.prev + defaultOption.disableClassPostfix);
         }
 
         if (carousel.clientWidth + carousel.scrollLeft >= carousel.scrollWidth) {
-            next.classList.add(option.next + defaultOption.disableClass);
+            next.classList.add(option.next + defaultOption.disableClassPostfix);
         } else {
-            next.classList.remove(option.next + defaultOption.disableClass);
+            next.classList.remove(option.next + defaultOption.disableClassPostfix);
         }
     }
 }
