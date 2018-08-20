@@ -9,7 +9,7 @@ export default function initCarousel(selector, option) {
         direction;
 
     if (carousel.length <= 0) {
-        console.log('error scroll selector');
+        throw Error('error scroll selector');
         return false;
     }
 
@@ -53,6 +53,8 @@ export default function initCarousel(selector, option) {
         } else {
             carousel.scrollLeft -= move;
         }
+
+        return false;
     }
 
     function scrollButtonNext(e) {
@@ -61,6 +63,8 @@ export default function initCarousel(selector, option) {
         } else {
             carousel.scrollLeft += move;
         }
+
+        return false;
     }
 
     function checkScrollTop(e) {

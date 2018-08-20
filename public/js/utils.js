@@ -11,7 +11,7 @@ export function toggleClass(selectorClass, targetClass, className) {
             }
         });
     } else {
-        console.log('no selector for class "' + selectorClass + '"');
+        throw Error('no selector for class "' + selectorClass + '"');
     }
 }
 
@@ -48,7 +48,7 @@ export function roundSlider(rangeClass, markerClass, negCircleClass) {
     let marker = document.getElementsByClassName(markerClass);
     let positive = document.getElementsByClassName(negCircleClass);
 
-    // range[0].addEventListener('change', slide);
+    range[0].addEventListener('change', slide);
     range[0].addEventListener('input', slide);
 
     function slide(e) {

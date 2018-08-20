@@ -21,7 +21,7 @@ $(module) {
 
 	&__ann {
 		font-size: 14px;
-		font-family: Arial;
+		font-weight: 400;
 		margin-bottom: 25px;
 	}
 
@@ -33,7 +33,7 @@ $(module) {
 		}
 
 		&-name {
-			font-family: Arial;
+			font-weight: 400;
 			font-size: 14px;
 			color: $brown-text;
 			margin-bottom: 5px;
@@ -127,7 +127,7 @@ $(module) {
 
 @media only screen and (max-width: $media-mobile) {
 	$(module) {
-	    padding: 20px 15px;
+	    padding: 20px 15px 0;
 
 	    &__ann {
 	    	margin-bottom: 15px;

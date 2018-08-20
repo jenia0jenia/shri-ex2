@@ -9,11 +9,11 @@ $(module) {
         background: 0 0;
     }
 
-	&_card,
     &_horiz {
 		$(module) {
 			&__wrapper {
     			scroll-behavior: smooth;
+    			padding-left: 5px;
 			}
 		}
     }
@@ -32,6 +32,7 @@ $(module) {
 		$(module) {
 			&__content {
     			scroll-behavior: smooth;
+    			padding-left: 5px;
 			}
 		}
     }
@@ -41,6 +42,9 @@ $(module) {
 			&__content {
     			scroll-behavior: smooth;
 				overflow: hidden;
+			}
+			&__wrapper {
+				margin: 0;
 			}
 		}
     }
@@ -69,10 +73,11 @@ $(module) {
 				&__list {
 					display: block;
 				    white-space: nowrap;
+					margin-bottom: 10px;
 			    }
 
 				&__wrapper {
-					margin-bottom: -10px;
+					margin-bottom: -20px;
 			        overflow-x: scroll;
 			        overflow-y: hidden;
 				}
@@ -125,10 +130,11 @@ $(module) {
 				&__list {
 					display: block;
 				    white-space: nowrap;
+					margin-bottom: 10px;
 			    }
 
 				&__wrapper {
-					margin-bottom: -10px;
+					margin-bottom: -20px;
 			        overflow-x: scroll;
 			        overflow-y: hidden;
 				}
@@ -180,7 +186,6 @@ $(module) {
 
 @media only screen and (max-width: $media-tablet) {
 	$(module) {
-		&_card,
 		&_horiz,
 		&_vert,
 		&_block {
@@ -188,10 +193,11 @@ $(module) {
 				&__list {
 					display: block;
 				    white-space: nowrap;
+					margin-bottom: 20px;
 			    }
 
 				&__wrapper {
-					margin-bottom: -10px;
+					margin-bottom: -20px;
 			        overflow-x: scroll;
 			        overflow-y: hidden;
 				}
@@ -223,14 +229,33 @@ $(module) {
 				}
 			}
 		}
+	}
+}
+
+@media only screen and (max-width: $media-tablet) {
+	$(module) {
 
 		&_card {
-		   $(module) {
+			$(module) {
+				&__list {
+					display: block;
+				    white-space: nowrap;
+					margin-bottom: 20px;
+			    }
+
+				&__wrapper {
+					margin-bottom: -20px;
+			        overflow-x: scroll;
+			        overflow-y: hidden;
+				}
+
 				&__content {
-					margin-right: -20px;
+					overflow: hidden;
 				}
 			}
 		}
+
+
 
 		&_card,
 		&_horiz,

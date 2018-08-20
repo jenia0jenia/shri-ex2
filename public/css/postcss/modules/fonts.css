@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: 'ArialBold';
+  font-family: 'Arial';
   src: url('../../f/ArialBold.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal;
 }
